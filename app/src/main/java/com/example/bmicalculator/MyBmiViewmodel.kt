@@ -1,3 +1,5 @@
+package com.example.bmicalculator
+
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -9,7 +11,7 @@ class MyBmiViewModel : ViewModel() {
     private val _weightInput = MutableStateFlow("")
     val weightInput: StateFlow<String> = _weightInput
 
-    private val _bmi = MutableStateFlow("Enter valid height & weight")
+    private val _bmi = MutableStateFlow("")
     val bmi: StateFlow<String> = _bmi
 
     fun setHeight(value: String) {
